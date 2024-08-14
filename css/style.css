@@ -49,6 +49,9 @@
     overflow: hidden; /* Hide overflow to prevent extra space below the wave */
     
   }
+  .header video{
+    margin-left: 20px;
+  }
   .custom-shape-divider-bottom-1723288429 {
     position: absolute;
     bottom: 0;
@@ -81,20 +84,20 @@
 }
 .header h1{
     /* font-family: 'Bodoni MT Bold', sans-serif; */
-    font-weight: 500;
-    font-size: 5rem;
-    line-height: 7rem;
+    font-weight: 400;
+    font-size: 4.5rem;
+    /* line-height: 7rem; */
     color: #ffffff;
     text-align: center;
 }
 .header h2{
     /* font-family: 'Bodoni MT', sans-serif; */
     font-weight: lighter;
-    font-size: 5rem;
-    line-height: 7rem;
+    font-size: 4.5rem;
+    /* line-height: 7rem; */
     color: #ffffff;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 .header .coloumn{
     display: flex;
@@ -228,7 +231,7 @@
     justify-content: center;
     text-align: center;
     line-height: 50%;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .countdowndiv{
     margin: 10px;
@@ -403,7 +406,7 @@
   }
 
   .earlyBird{
-    text-align: center; color: #fff; margin: 10px; font-size: 8rem; font-weight: 500; letter-spacing: -3px;
+    text-align: center; color: #fff; margin: 10px; font-size: 8rem; font-weight: 500; letter-spacing: -3px; margin-top: 4rem;
   }
     .earlyBirdValid{
         color: #ffffff;
@@ -412,9 +415,12 @@
         text-align: center;
     }
     .videotestiomal{
+        padding: 4rem;
+        margin: auto;
+        width: 90%;
         margin-top: 5rem;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+        grid-template-columns: repeat(3, 1fr); /* 4 columns with equal width */
         gap: 20px; /* Space between the videos */
     }
     .singlevideo{
@@ -432,14 +438,34 @@
         width: 100%; /* Ensures the video fills its container */
         border-radius: 5px; /* Optional: rounded corners for the video */
     }
+    .incase{
+        font-size: 4rem;width: 90%; margin: auto; letter-spacing: -1px;
+    }
+
     /* Center the videos in the second row without increasing their width */
-    .singlevideo:nth-child(5) {
-        grid-column-start: 2; /* Start the first video in the second row from the second column */
+    /* .singlevideo:nth-child(5) {
+        grid-column-start: 2; 
     }
 
     .singlevideo:nth-child(6) {
-        grid-column-start: 3; /* Start the second video in the second row from the third column */
+        grid-column-start: 3; 
+    } */
+
+
+    .workshoprow{
+        width: 90%;
+        margin: auto !important;
     }
+    .earlyBirdOffer {
+        width: 90%;
+        margin: auto;
+    }
+
+    .earlyBirdOffer a{
+        font-size: 4rem;
+    }
+
+
   /*************************************responsive website layout start  ***************************************/
   
   
@@ -487,11 +513,19 @@
             font-size: 3rem;
         }
         .videotestiomal{
-            width: 90%;
-            padding: 4rem;
             grid-template-columns: repeat(2, 1fr); 
         }
-
+        .header video{
+            margin-left: 0px;
+          }
+          .header h2{
+            font-size: 7rem;
+            font-weight: 500;
+          }
+          .earlyBirdOffer a{
+            font-size: 2.5rem;
+        }
+    
   }
   
    /* Tablets in portrait mode / */
@@ -507,6 +541,15 @@
   @media (min-width: 1024px) and (max-width: 1399px) {
         html {
           font-size: 50%;
+        }
+        .keypoints{
+            width: 92%;
+        }
+        .incase{
+            width: 88%;
+        }
+        .earlyBirdOffer a{
+            font-size: 5rem;
         }
 
   
@@ -531,5 +574,10 @@
         padding: 0;
         margin: 0;
       }
-
+      .header h2{
+        font-size: 5rem;
+      }
+      .earlyBirdOffer a{
+        font-size: 5rem;
+    }
   }
