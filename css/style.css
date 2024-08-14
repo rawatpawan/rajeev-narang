@@ -80,15 +80,15 @@
     border-radius: 10px;
 }
 .header h1{
-    font-family: 'Bodoni MT Bold', serif;
-    font-weight: 400;
+    /* font-family: 'Bodoni MT Bold', sans-serif; */
+    font-weight: 500;
     font-size: 5rem;
     line-height: 7rem;
     color: #ffffff;
     text-align: center;
 }
 .header h2{
-    font-family: 'Bodoni MT', serif;
+    /* font-family: 'Bodoni MT', sans-serif; */
     font-weight: lighter;
     font-size: 5rem;
     line-height: 7rem;
@@ -105,7 +105,7 @@
 .lead{
     color: #fff;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
 }
 
@@ -154,7 +154,7 @@
     color: #fff;
     font-weight: 400;
     font-size: 2.8rem;
-    font-family:'Bodoni MT Bold',sans-serif;
+    /* font-family:'Bodoni MT Bold',sans-serif; */
     text-align: center;
     text-transform: capitalize;
     margin-top: 1rem;
@@ -401,6 +401,45 @@
       opacity: 1;
     }
   }
+
+  .earlyBird{
+    text-align: center; color: #fff; margin: 10px; font-size: 8rem; font-weight: 500; letter-spacing: -3px;
+  }
+    .earlyBirdValid{
+        color: #ffffff;
+        font-size: 3.4rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .videotestiomal{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+        gap: 20px; /* Space between the videos */
+    }
+    .singlevideo{
+        margin: 10px 10px 10px 10px;
+        border-style: solid;
+        border-width: 3px 3px 3px 3px;
+        border-color: #008779;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / .5);
+        width: 100%;
+    }
+    
+
+    .singlevideo video {
+        width: 100%; /* Ensures the video fills its container */
+        border-radius: 5px; /* Optional: rounded corners for the video */
+    }
+    /* Center the videos in the second row without increasing their width */
+    .singlevideo:nth-child(5) {
+        grid-column-start: 2; /* Start the first video in the second row from the second column */
+    }
+
+    .singlevideo:nth-child(6) {
+        grid-column-start: 3; /* Start the second video in the second row from the third column */
+    }
   /*************************************responsive website layout start  ***************************************/
   
   
@@ -432,7 +471,26 @@
         .name {
             font-size: 4rem;
         }
+        .keyfeature p{
+            font-size: 2rem;
 
+        }
+        .earlyBird{
+            font-size: 4rem;
+            letter-spacing: 0;
+        }
+        .earlyBirdValid{
+            font-size: 4rem;
+        }
+        .description h3{
+            
+            font-size: 3rem;
+        }
+        .videotestiomal{
+            width: 90%;
+            padding: 4rem;
+            grid-template-columns: repeat(2, 1fr); 
+        }
 
   }
   
