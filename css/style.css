@@ -465,6 +465,63 @@
         font-size: 4rem;
     }
 
+    .paymentpage{
+        background: #ECECEC;
+        padding: 60px 0;
+        margin: 0px;
+    }
+
+
+
+    .paymentrow {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        gap: 15px; /* Optional: Adjust the gap between columns */
+    }
+    
+    .paymentcolumn {
+        /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+        border-radius: 5px;
+        background: #ffffff;
+        padding: 20px; 
+    }
+
+    .paymentheading{
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #000;
+        text-align: justify;
+        margin-top: 3rem;
+    }
+
+    .paymentform label{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .paymentform .form-control,.form-select{
+        padding: .8rem 1rem;
+        font-size: 1.5rem;
+        border-radius: .3rem;
+    }
+   .paymentform input::placeholder {
+        font-size: 1.5rem;
+        color: #888;
+        font-weight: 500;
+    }
+    .paymentform .btn-primary{
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+
+    .bankdetails p{
+        font-size: 1.5rem;
+
+    }
+    .bankdetails ul li{
+        font-size: 1.5rem;
+        display: flex;
+    }
+
 
   /*************************************responsive website layout start  ***************************************/
   
@@ -524,6 +581,12 @@
           }
           .earlyBirdOffer a{
             font-size: 2.5rem;
+        }
+        .paymentrow {
+            grid-template-columns: 100%;
+        }
+        .paymentpage .earlyBirdValid{
+            font-size: 3rem !important;
         }
     
   }
