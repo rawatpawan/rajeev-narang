@@ -534,6 +534,9 @@
     .faqdiv{
         margin-top: 50px;margin-bottom: 200px;
     }
+    .aboutmaindiv{
+        padding: 60px;
+    }
   /*************************************responsive website layout start  ***************************************/
   
   
@@ -632,6 +635,9 @@
         }
         .imagesmobile{
             display: block !important;
+        }
+        .aboutmaindiv{
+            padding: 60px 30px;
         }
     
   }
