@@ -627,6 +627,12 @@
         .faqdiv{
             margin-bottom: 100px;
         }
+        .images{
+            display: none;
+        }
+        .imagesmobile{
+            display: block !important;
+        }
     
   }
   
