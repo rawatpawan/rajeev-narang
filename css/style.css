@@ -40,8 +40,8 @@
   
   
   .header{
-    min-height: 100vh;
-    padding: 70px 0;
+    /* min-height: 100vh; */
+    padding: 100px 0;
     background-color: #FFFFFF;
     background-image: linear-gradient(180deg, #141414 30%, #212121 100%);
     /* background-image: linear-gradient(180deg, #001861 30%, #000A32 100%); */
@@ -98,6 +98,11 @@
     color: #ffffff;
     text-align: center;
     font-weight: 600;
+}
+.tiltleweb{
+    font-weight: 800;
+    font-size: 6rem;
+    margin-bottom: 20px;
 }
 .header .coloumn{
     display: flex;
@@ -178,7 +183,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 140px;
+    height: 90px;
 }
 
 .custom-shape-divider-top-1723343011 .shape-fill {
@@ -289,7 +294,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 50px;
+    height: 30px;
     
 }
 
@@ -424,7 +429,7 @@
         gap: 20px; /* Space between the videos */
     }
     .singlevideo{
-        margin: 10px 10px 10px 10px;
+        /* margin: 10px 10px 10px 10px; */
         border-style: solid;
         border-width: 3px 3px 3px 3px;
         border-color: #008779;
@@ -522,7 +527,13 @@
         display: flex;
     }
 
+    .yellowdiv{
+        width: 80%; margin: auto;
+    }
 
+    .faqdiv{
+        margin-top: 50px;margin-bottom: 200px;
+    }
   /*************************************responsive website layout start  ***************************************/
   
   
@@ -562,15 +573,19 @@
             font-size: 4rem;
             letter-spacing: 0;
         }
-        .earlyBirdValid{
+        /* .earlyBirdValid{
             font-size: 4rem;
-        }
+        } */
         .description h3{
             
             font-size: 3rem;
         }
         .videotestiomal{
+            width: 100%;
             grid-template-columns: repeat(2, 1fr); 
+        }
+        .singlevideo{
+            margin: 0px;
         }
         .header video{
             margin-left: 0px;
@@ -578,6 +593,11 @@
           .header h2{
             font-size: 7rem;
             font-weight: 500;
+          }
+          .tiltleweb{
+            font-weight: 800;
+            font-size: 8.5rem;
+            margin-bottom: 20px;
           }
           .earlyBirdOffer a{
             font-size: 2.5rem;
@@ -587,6 +607,25 @@
         }
         .paymentpage .earlyBirdValid{
             font-size: 3rem !important;
+        }
+        .yellowdiv{
+            width: 100%;
+        }
+        .custom-shape-divider-top-1723343011 svg{
+            height: 60px;
+        }
+        .custom-shape-divider-top-1723354400 svg{
+            height: 20px;
+        }
+        /* .images img{
+            height: 100px;
+            width: 100px;
+        } */
+        .faq{
+            padding: 1px 0;
+        }
+        .faqdiv{
+            margin-bottom: 100px;
         }
     
   }
