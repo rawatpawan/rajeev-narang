@@ -639,6 +639,11 @@
         .aboutmaindiv{
             padding: 60px 30px; 
         }
+
+        .earlyBirdValid .break-after::before {
+            content: "";
+            display: block;
+          }
     
   }
   
